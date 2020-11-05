@@ -1,0 +1,191 @@
+body {
+	background-color: #535356;
+}
+.container {
+	margin:20px auto;
+	width: 985px;
+	height: 500px;
+	font-family: arial;
+	position: relative;
+	border: 1px solid #535356;
+}
+
+a {
+	text-decoration: none;
+	color: #535356;
+}
+
+h2 {
+	color: #62626b;
+}
+p {
+	color: grey;
+	margin: 0 20px;
+}
+.box1 {
+	position: absolute;
+	display: inline-block;
+	border: 1px solid lightgrey;
+	width: 300px;
+	height: 500px;
+	text-align: center;
+	left: 0;
+	top: 0;
+	border-radius: 20px;
+	box-shadow: 3px 3px 0px 3px lightgrey;
+	background-color: white;
+}
+
+.box1 img {
+	width: 200px;
+	height: 180px;
+	border-radius: 30px;
+	padding-top: 50px;
+}
+
+.box1 .k1 {
+	margin-top: 80px;
+}
+
+.box2 {
+	position:absolute;
+	display: inline-block;
+	border: 1px solid lightgrey;
+	width: 300px;
+	height: 500px;
+	text-align: center;
+	top: 0;
+	right: 340px;
+	border-radius: 20px;
+	box-shadow: 3px 3px 0px 3px lightgrey;
+	background-color: white;
+}
+.box2 img {
+	width: 300px;
+	height: 200px;
+	border-radius: 30px;
+	padding-top: 30px;
+	margin-bottom: 10px;
+}
+
+.box2 .k2 {
+	margin-top: 70px;
+}
+
+.box3 {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: inline-block;
+	border: 1px solid lightgrey;
+	width: 300px;
+	height: 500px;
+	text-align: center;
+	border-radius: 20px;
+	box-shadow: 3px 3px 0px 3px lightgrey;
+	background-color: white;
+}
+.box3 img {
+	width: 260px;
+	height: 190px;
+	border-radius: 30px;
+	padding-top: 40px;
+}
+
+.box3 .k3 {
+	margin-top: 80px;
+}
+
+.box3 .kotak3 {
+	margin-left: 30px;
+	width: 250px;
+
+}
+
+.box1:hover {
+	box-shadow: 3px 3px 0px 3px lightgrey, 10px 10px 10px 5px grey;
+	transition: ease 0.3s;
+	transform: scale(1.05);
+}
+.box2:hover {
+	box-shadow: 3px 3px 0px 3px lightgrey, 10px 10px 10px 5px grey;
+	transition: ease 0.3s;
+	transform: scale(1.05);
+}
+.box3:hover {
+	box-shadow: 3px 3px 0px 3px lightgrey, 10px 10px 10px 5px grey;
+	transition: ease 0.3s;
+	transform: scale(1.05);
+}
+
+.button {
+	font-family: arial;
+	margin: 40px auto 0;
+	width: 280px;
+	height: 50px;
+	font-size: 14px;
+}
+
+.home {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-color: lightgrey;
+	border-radius: 50px;
+	padding: 15px;
+	margin-left: 110px;
+	border: 1px solid grey;
+}
+
+h4 .back {
+	text-align: center;
+	width: 80px;
+	height: 50px;
+	border: 1px solid grey;
+	border-radius: 80px;
+	padding-top: -10px;
+	float: left;
+	color: #535356;
+	background-color: lightgrey;
+	line-height: 50px;
+	font-style: bold;
+}
+
+h4 .next {
+	text-align: center;
+	width: 80px;
+	height: 50px;
+	border: 1px solid grey;
+	border-radius: 80px;
+	padding-top: px;
+	line-height: 50px;
+	float: right;
+	color: #535356;
+	background-color: lightgrey;	
+}
+.clearback {
+	clear: left;
+}
+.clearhelp {
+	clear: right;
+}
+
+.button:link {
+	color: black;
+}
+
+.button .back:hover {
+	box-shadow: 3px 3px 3px 0 lightgrey;
+	font-size: 18px;
+}
+.button .next:hover {
+	box-shadow: 3px 3px 3px 0 lightgrey;
+	font-size: 18px;
+}
+.button .home:hover {
+	box-shadow: 3px 3px 3px 0 lightgrey;
+	font-size: 18px;	
+}
+.button:active {
+	font-size: 15px;
+}

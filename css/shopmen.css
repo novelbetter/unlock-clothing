@@ -1,0 +1,328 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Batas CSS Reset*/
+
+body {
+	background-color: #222321;
+	height: 100%;
+}
+
+/* Bungkus */
+.all {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-flow: row;
+	width: 100%;
+	height: 700px;
+	margin-top: 150px;
+}
+
+.header {
+	display: inline-block;
+	z-index: 9999;
+	background-color: white;
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+	height: 100px;
+	border-bottom: 10px solid black;
+}
+.header h1 {
+	font-family: 'Manrope', serif;
+	line-height: 20px;
+	font-size: 40px;
+	padding: 30px 0 0 20px;
+}
+.header h2 {
+	font-family: 'Markazi Text', sans-serif;
+	font-size: 20px;
+	padding: 10px 0 0 23px;
+}
+.header h3 {
+	display: inline;
+	font-family: 'Markazi Text', sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: -60px;
+	float: right;
+}
+.in {
+	margin-right: 100px;
+}
+.line {
+	margin-right: 90px;
+}
+.up {
+	margin-right: 20px;
+}
+
+
+/* Main Content */
+.container {
+	display: flex;
+	width: 800px;
+	background-color: white;
+	padding: 20px;
+	box-shadow: 0 0 3px 3px rgba(0,0,0,.5);
+	border-radius: 5px;
+}
+
+div.bariskonten ul {
+	width: 800px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+}
+
+.gallery li {
+	width: 250px;
+	height: 200px;
+	overflow: hidden;
+	box-shadow: 0 0 5px lightgrey;
+	float: left;
+	margin: 0 5px 0 5px;
+	position: relative;
+	border-radius: 7px;
+}
+.gallery img {
+	width: 290px;
+	height: 200px;
+}
+
+.gallery li,
+.gallery li span {
+	border-radius: 5px;
+}
+
+.gallery li span {
+	display: block;
+	width: 190px;
+	height: 200px;
+	background-color: rgba(20,20,20,.5);
+	position: absolute;
+	top: 0;
+	text-align: center;
+	line-height: 200px;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+	opacity: 0;
+	transition: 0.3s;
+}
+.gallery li a:hover span {
+	opacity: 1;
+}
+
+.clear {
+	clear: both;
+}
+
+/* Overlay */
+.overlay {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0);
+	z-index: 9999;
+	transition: .3s;
+	text-align: center;
+	padding: 80px 0;
+}
+
+.overlay:target {
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.8);
+	width: auto;
+	height: auto;
+}
+
+.overlay img {
+	height: 100%;
+	width: auto;
+	box-shadow: 2px 2px 7px rgba(0,0,0,.5);
+}
+
+.overlay:target img {
+	animation: zoomdanfade .5s;
+}
+
+.overlay .close {
+	position: absolute;
+	top: 60px;
+	margin-left: 50%;
+	background-color: black;
+	border: 2px solid white;
+	padding: 5px;
+	border-radius: 80%;
+	width: 20px;
+	height: 20px;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	font-family: arial;
+	opacity: 0;
+}
+
+.overlay:target .close {
+	animation: slidedown .8s .1s forwards;
+}
+
+/* Tools */
+.tools {
+	padding: 20px 10px;
+	width: 200px;
+	height: 500px;
+	background-color: white;
+	box-shadow: 0 0 3px 3px rgba(0,0,0,.5);
+	border-radius: 5px;
+	font-family: arial;
+}
+
+.tools .search {
+	color: #999;
+	font-size: 14px;
+	letter-spacing: .5px;
+	text-shadow: 0 0 0.8px grey;
+}
+.tools .search {
+	border-radius: 80px;
+	width: 90%;
+	height: 25px;
+	background: linear-gradient(to bottom,rgba(202,203,204,.1) 1%, #fff 100%);
+}
+
+.search {
+	font-color: black;
+	margin-top: 5px;
+	padding: 10px;
+	border: 1px solid #cacbcc;
+	outline: 0;
+	font: normal 13px/100% verdana, tahoma, sans-serif;
+	width: 200px;
+	box-shadow: 0 0 5px rgba(0,0,0,.1);
+}
+
+.tools table, .label {
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.tools .label {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.tools .filter {
+	margin-top: 10px;
+}
+/* Info */
+.info {
+	padding: 20px 10px;
+	width: 200px;
+	height: 500px;
+	background-color: white;
+	box-shadow: 0 0 3px 3px rgba(0,0,0,.5);
+	border-radius: 5px;
+}
+
+
+/* animasi */
+@keyframes zoomdanfade {
+	0% {
+		transform: scale(0);
+		opacity: 0;
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes slidedown {
+	0% {
+		opacity: 0;
+		margin-top: -20px;
+	}
+	100% {
+		opacity: 1;
+		margin-top: 0px;
+	}
+}
+
+
+/* Footer */
+.footer {
+	bottom: 0;
+	position: relative;
+	min-height: 100%;
+	color: white;
+	padding: 20px;
+	background-color: black;
+}
+
+/* clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}

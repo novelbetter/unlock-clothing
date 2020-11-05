@@ -1,0 +1,122 @@
+body {
+	background-color: #535356;
+}
+.container {
+	background-color: white;
+	position: relative;
+	height: 500px;
+	width: 800px;
+	font-family: arial;
+	border: 2px solid lightgrey;
+	margin: 20px auto;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+.abu, .hitam {
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	border-radius: 100px;
+}
+
+.abu {
+	background-color: grey;
+}
+
+.hitam {
+	position: absolute;
+	margin-left: -10px;
+	background-color: black;
+}
+
+h4 {
+	z-index: 9999;
+	position: absolute;
+	display: inline-block;
+	word-spacing: 30px;
+	font-family: cursive;
+	color: grey;
+	right: 0;
+	margin-right: 30px;
+	margin-top: 5px;
+}
+a:hover {
+	text-shadow: 3px 3px 5px lightgrey;
+	color: #62626b;
+	font-size: 18px;
+	transition: ease 0.3s;
+}
+
+.main {
+	margin-left: 25px;
+	margin-top: -350px;
+	border: 1px solid white;
+	height: 300px;
+	width: 380px
+}
+.main h1 {
+	color: #12121b;
+	font-style: bold;
+	font-size: 40px;
+}
+.main h3, h5 {
+	color: #41414A;
+	margin-top: -15px;
+	font-family: sans-serif;
+}
+
+.foto {
+	margin-right: 20px;
+	float: right;
+	margin-top: 40px;
+
+}
+
+.img {
+	height: 350px;
+	width: 350px;
+	border-radius: 20px;
+	box-shadow: 8px 8px 20px 0 grey;
+}
+
+.clear1 {
+	clear: right;
+}
+.clear2 {
+	clear: right;
+}
+
+.button a {
+	text-decoration: none;
+	color: #62626b;
+	font-weight: bold;
+
+}
+.button {
+	line-height: 50px;
+	text-align: center;
+	height: 50px;
+	width: 150px;
+	padding-top:px; 
+	border: 1px solid darkgrey;
+	border-radius: 80px;
+	background-color: #EAEAEA;
+	margin-top: -50px;
+	margin-left: 150px;
+}
+.button:link {
+	color: grey;
+}
+
+.button:hover {
+	box-shadow: 5px 5px 10px 0 lightgrey;
+	font-size: 18px;
+}
+.button:active {
+	font-size: 15px;
+}
+
+.hero {
+	margin-top: 20px;
+}

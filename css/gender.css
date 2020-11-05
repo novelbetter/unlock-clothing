@@ -1,0 +1,164 @@
+body {
+	background-color: #535356;
+}
+.judul {
+	margin: 0 0 0 570px;
+	color: white;
+	font-family: cursive;
+	font-size: 18px;
+}
+.container {
+	margin:10px auto;
+	width: 645px;
+	height: 500px;
+	font-family: arial;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+	color: #535356;
+}
+
+h2 {
+	color: #62626b;
+}
+p {
+	color: grey;
+	margin: 0 20px;
+}
+.box1 {
+	position: absolute;
+	display: inline-block;
+	border: 1px solid lightgrey;
+	width: 300px;
+	height: 500px;
+	text-align: center;
+	left: 0;
+	top: 0;
+	border-radius: 20px;
+	box-shadow: 3px 3px 0px 3px lightgrey, 0px 35px 10px -20px rgba(0,0,0,.75);
+	background-color: white;
+}
+
+.box1 img {
+	width: 200px;
+	height: 400px;
+	border-radius: 30px;
+	padding-top: 20px;
+}
+
+.box1 .k1 {
+	margin-top: 0px;
+}
+
+.box2 {
+	position:absolute;
+	display: inline-block;
+	border: 1px solid lightgrey;
+	width: 300px;
+	height: 500px;
+	text-align: center;
+	top: 0;
+	right: 0;
+	border-radius: 20px;
+	box-shadow: 3px 3px 0px 3px lightgrey, 0px 35px 10px -20px rgba(0,0,0,.75);
+	background-color: white;
+}
+.box2 img {
+	width: 200px;
+	height: 420px;
+	border-radius: 30px;
+	padding-top: 20px;
+	margin-bottom: px;
+}
+
+.box2 .k2 {
+	margin-top: -20px;
+}
+
+
+.box1:hover {
+	box-shadow: 3px 3px 0px 3px lightgrey, 10px 10px 10px 5px grey;
+	transition: ease 0.5s;
+	transform: scale(1.03);
+}
+.box2:hover {
+	box-shadow: 3px 3px 0px 3px lightgrey, 10px 10px 10px 5px grey;
+	transition: ease 0.5s;
+	transform: scale(1.03);
+}
+
+.button {
+	position: absolute;
+	font-family: arial;
+	margin: 490px 0 0 190px;
+	width: 280px;
+	height: 50px;
+	font-size: 14px;
+}
+
+.home {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-color: lightgrey;
+	border-radius: 50px;
+	padding: 15px;
+	margin-left: 110px;
+	margin-top: 15px;
+	border: 1px solid grey;
+}
+
+h4 .back {
+	text-align: center;
+	width: 80px;
+	height: 50px;
+	border: 1px solid grey;
+	border-radius: 80px;
+	padding-top: -10px;
+	float: left;
+	color: #535356;
+	background-color: lightgrey;
+	line-height: 50px;
+	font-style: bold;
+}
+
+h4 .help {
+	text-align: center;
+	width: 80px;
+	height: 50px;
+	border: 1px solid grey;
+	border-radius: 80px;
+	padding-top: px;
+	line-height: 50px;
+	float: right;
+	color: #535356;
+	background-color: lightgrey;	
+}
+.clearback {
+	clear: left;
+}
+.clearhelp {
+	clear: right;
+}
+
+.button:link {
+	color: black;
+}
+
+.button .back:hover {
+	box-shadow: 3px 3px 3px 0 lightgrey;
+	font-size: 18px;
+}
+.button .help:hover {
+	box-shadow: 3px 3px 3px 0 lightgrey;
+	font-size: 18px;
+}
+.button .home:hover {
+	box-shadow: 3px 3px 3px 0 lightgrey;
+	font-size: 18px;	
+}
+.button:active {
+	font-size: 15px;
+}
